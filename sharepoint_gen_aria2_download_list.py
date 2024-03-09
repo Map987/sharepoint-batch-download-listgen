@@ -39,16 +39,16 @@ SESSION = requests.Session()
 
 def main():
     global COOKIE_FEDAUTH, SHAREPOINT_ROOT, SESSION, DLPATH_PRIFIX
-    SHAREPOINT_ROOT = input("SharePoint Real Path (eg. https://xxxx-my.sharepoint.com/personal/aaaa_t_cccc_cn/Documents/):\n")
+    SHAREPOINT_ROOT = in
     SHAREPOINT_PATH = urlparse(SHAREPOINT_ROOT).path
 
-    COOKIE_FEDAUTH = input("FedAuth cookie (base64 value only):\n")
+    COOKIE_FEDAUTH = cooki
     cookies={
         'FedAuth': COOKIE_FEDAUTH
     }
     requests.utils.add_dict_to_cookiejar(SESSION.cookies, cookies)
 
-    download_dir = input("Download path (Default: Downloads/): ")
+    download_dir = "/content/"
     if download_dir != '':
         DLPATH_PRIFIX = download_dir.rstrip('/') + '/'
     else:
