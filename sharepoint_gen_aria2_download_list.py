@@ -39,7 +39,7 @@ SESSION = requests.Session()
 
 def main():
     global COOKIE_FEDAUTH, SHAREPOINT_ROOT, SESSION, DLPATH_PRIFIX
-    SHAREPOINT_ROOT = in
+    SHAREPOINT_ROOT = inn
     SHAREPOINT_PATH = urlparse(SHAREPOINT_ROOT).path
 
     COOKIE_FEDAUTH = cooki
