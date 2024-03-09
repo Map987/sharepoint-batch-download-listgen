@@ -33,6 +33,9 @@ from urllib.parse import urlparse,quote,unquote
 ARIA2_INPUT_FILE = 'aria2-links.txt'
 DLPATH_PRIFIX = 'Downloads/'
 
+inn = ""  #  @param {type:"string"}
+cooki = "" #  @param {type:"string"}
+
 COOKIE_FEDAUTH = None
 SHAREPOINT_ROOT = None
 SESSION = requests.Session()
